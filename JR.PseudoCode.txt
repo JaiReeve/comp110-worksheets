@@ -1,0 +1,34 @@
+Jai Reeve
+
+Fallout Game
+    
+    Print "guess password"
+    Assign user input to variable "CharacterNumber"
+    Create variable in "SimilarScore"
+    Assign SimilarScore value 0
+    Select random word from array
+    Store random word in variable "RandomWord"
+    
+    Begin check loop{
+    Print list of words to user
+    User input stored as "Wordpicked"
+    if first letter is the same in both RandomWord and wordpicked
+        increase SimilarityScore by 25
+    else
+        decrease SimilarityScore by 20
+        
+    if second letter is the same in both RandomWord and wordpicked
+        increase SimilarityScore by 25
+    else
+        decrease SimilarityScore by 20
+        
+    Continue looping for the amount of letters stored in "CharacterNumber"
+    }End loop
+    
+    Print similarity score to user
+    if score is equal to or greater than 100
+        Print "correct passowrd"
+        exit game
+    else
+        Print "terminal locked"
+        return to loop
